@@ -1,7 +1,11 @@
 # Given a binary array nums, return the maximum number of consecutive 1's in the array.
 
+# Time Complexity: O(n)
+class Solution(object):
+    def __init__(self) -> None:
+        pass
 
-def findMaxConsecutiveOnes(nums):
+    def findMaxConsecutiveOnes(nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -26,8 +30,10 @@ def findMaxConsecutiveOnes(nums):
         #then return max_consecutive_ones
         return max_consecutive_ones
 
-binary_numbers = [1,0,1,1,0,1]    
-print('Max Consecutive Ones = ', findMaxConsecutiveOnes(binary_numbers))
+#test with any array input
+binary_numbers = [1,0,1,1,0,1]
+
+print('Max Consecutive Ones = ', Solution.findMaxConsecutiveOnes(binary_numbers))
 
 
 # Output => Max Consecutive Ones =  2

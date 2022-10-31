@@ -2,7 +2,13 @@
 
 # Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
-def merge(nums1, m, nums2, n):
+
+# Time Complexity: O(n)
+class Solution(object):
+    def __init__(self) -> None:
+        pass
+
+    def merge(nums1, m, nums2, n):
         """
         :type nums1: List[int]
         :type m: int
@@ -19,10 +25,13 @@ def merge(nums1, m, nums2, n):
 
         return nums1
 
+#test with any array input
 nums1 = [1,2,3,0,0,0]
 m = 3
 nums2 = [2,5,6]
 n = 3
 
 
-print(merge(nums1, m, nums2, n))
+print(Solution.merge(nums1, m, nums2, n))
+
+#Output => [1, 2, 2, 3, 5, 6] |excluding the zeroes|
